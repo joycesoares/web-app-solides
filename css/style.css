@@ -1,0 +1,137 @@
+/* Resetar os espaçamentos*/
+body,div, h3,h4,h5,h6, p, a{
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+/* Tags de Texto*/
+p{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.543846);
+  display: flex;
+  justify-content: space-between;
+}
+h3{
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bolder;
+}
+h4{
+  margin: 4px;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+h5{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #231D4A;
+}
+h6 {
+  font-size: 40px;
+  line-height: 29px;
+  color: #231D4A;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+/* Card inicial da intro*/
+.span_profile{
+  font-style:  italic;
+}
+.bg_intro{
+  background-color: #EEEEEE;
+}
+.nav_menu{
+  background-color: #231D4A;
+}
+.box_cards{
+  width: 345px;
+  height: 150px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.box_photo{
+  margin: 0 auto;
+  padding: 0 auto;
+  float: left;
+  width: 90px;
+  height: 150px;
+  background-color: #FF6E40;
+  position: relative;
+  align-items: center;
+  display: block
+}
+.img_box{
+  top:20%;
+  left:15%;
+  position: absolute;
+}
+.box_desc{
+  margin: 5px 4px;
+  padding: 0 auto;
+  float: left;
+  position: relative;
+  display: block
+}
+.line_bottom::before{
+  content: "";
+  display: block;
+  max-width: 100%;
+  background: #DBDBDB;
+  border: 1px solid #DBDBDB;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Segundo card da intro*/
+.btn_more {
+  width: 250px;
+  background-color: #231D4A;
+  color: #ffffff;
+  border-radius: 2%;
+  margin-left: 30px;
+}
+.box_horario{
+  margin: 0 auto;
+  padding: 30px auto;
+  float: left;
+  position: relative;
+  display: block;
+  margin-bottom: 0px;
+}
+.box_horas{
+  float: right;
+  margin-left: 250px;
+  position: absolute;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+/* Terceiro card da intro*/
+.box_ferias{
+  background-color: #231D4A;
+  width: 345px;
+  height: 150px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+.btn_rh {
+  width: 250px;
+  background-color: #FF6E40;
+  color: #ffffff;
+  border-radius: 2%;
+  margin-left: 30px;
+}
+.text_ferias{
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
