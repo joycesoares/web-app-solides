@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solides People</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg_intro">
+  <!--Menu mobile-->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header nav_menu">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Profiler</span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+        mdl-textfield--floating-label mdl-textfield--align-right">
+      </div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="dash.html">Dashboard</a>
+        <a class="mdl-navigation__link" href="profile.html">Profile</a>
+        <a class="mdl-navigation__link" href="mirror.html">Espelho de Ponto</a>
+        <a class="mdl-navigation__link" href="vacation.html">Férias</a>
+        <a class="mdl-navigation__link" href="config.html">Configurações</a>
+      </nav>
+    </div>
+  </header>
+  <!--Menu lateral mobile-->
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-image">
+      <img src="img/avatar.png">
+  </span>
+    <span class="mdl-layout-title">Roberto Coelho</span>
+    <p>roberto.coelho@gmail.com</p>
+    <span class="line_bottom"></span>
+    <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="dash.html">
+                    <div class="mdl-layout-spacer"></div>
+                    <i class="material-icons">reorder</i>
+                    Dashboard
+                  </a>
+        
+      <a class="mdl-navigation__link" href="profile.html">
+        <i class="material-icons">person</i>
+        Profiler
+      </a>
+      <a class="mdl-navigation__link" href="mirror.html">
+        <div class="mdl-layout-spacer"></div>
+        <i class="material-icons">apps</i>
+        Espelho de Ponto
+      </a>
+      <a class="mdl-navigation__link link_sidebar" href="vacation.html">
+        <i class="material-icons">beach_access</i>
+        Férias
+      </a>
+      <a class="mdl-navigation__link" href="config.html">
+        <i class="material-icons">settings</i>
+        Configurações
+      </a>
+    </nav>
+  </div>
+  <!--Corpo com os cards-->
+  <main class="mdl-layout__content">
+  <div class="mdl-grid">
+    <!--Card de perfil com informação do profile-->
+      <div class="mdl-cell mdl-cell--6-col box_cards mdl-cell--8-cel-tablet">
+        <div class="mdl-cell mdl-cell--3-col box_desc">
+          <h4>Roberto Coelho</h4>
+          <p>Executor: <span><i>40.58%</i></span> <span><i>26.21%</i></span>  <span><i>22.47%</i></span></p>
+          <p>Comunicador: <span><i>40.98%</i></span> <span><i>3.6%</i></span>  <span><i>19.84%</i></span></p>
+          <p>Planejador: <span><i>63.93%</i></span> <span><i>12.83%</i></span>  <span><i>28.95%</i></span></p>
+          <p>Analista: <span><i>52.15%</i></span> <span><i>25.78%</i></span>  <span><i>28.74%</i></span></p>
+          
+       </div>
+      </div>
+      <!--Card com dados do banco de horas-->
+      <div class="mdl-cell mdl-cell--6-col box_cards ">
+          <div class="mdl-cell mdl-cell--3-col box_desc li">
+         <p> Data <span><i>21/07/19</i></span></p>
+         <p> Energia <span><i>37.78% (Normal Baixa)</i></span></p>
+         <p> IEM <span><i></i>100.91 (Extremamente Alta)</span></p>
+         <p> IA <span><i>-1.21 (Normal Baixo)</i></span></p>
+         <p> Moral <span><i>3.2 (Normal Alto)</i></span></p>
+         <p> Energia Perfil <span><i>57.2 (Normal Alta)</i></span></p>
+
+
+
+
+
+        </div>
+    </div>
+  </main>
+</body>
+</html>

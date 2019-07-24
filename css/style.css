@@ -26,6 +26,9 @@ h4{
   margin-bottom: 10px;
 }
 h5{
+  font-family: Roboto;
+  text-align: justify;
+  font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
   color: #231D4A;
@@ -135,3 +138,73 @@ h6 {
   line-height: 23px;
   margin-bottom: 10px;
 }
+
+
+.index-banner{
+  display: flex;
+  width: 100%;
+  background: #231D4A;
+  max-width: 100%;
+  max-height: auto;
+  
+} 
+.index-banner img {
+  padding: 80px;
+  width: 65%;
+  height: auto;
+}
+
+.index-banner p {
+
+  position: absolute;
+  width: 85px;
+  height: 19px;
+  left: 170px;
+  top: 360px;  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 19px;
+  /* identical to box height */
+  
+  letter-spacing: 0.4em;
+  
+  color: #FFFFFF;
+}
+
+.login-banner  {
+  display: flex-start;
+  width: 100%;
+  background: white;
+  max-width: 100%;
+  max-height: auto;
+
+}
+
+.login-banner img {
+  align-items: top;
+  width: 65%;
+  height: auto;
+}
+
+.login-banner p {
+
+  position: flex-start;
+  width: 85px;
+  height: 19px;
+  left: 170px;
+  top: 360px;  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 19px;
+  /* identical to box height */
+  
+  letter-spacing: 0.4em;
+  
+  color:#231D4A;
+}
+
+

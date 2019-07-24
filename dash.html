@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solides People</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg_intro">
+  <!--Menu mobile-->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header nav_menu">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Dashboard</span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+        mdl-textfield--floating-label mdl-textfield--align-right">
+        <img src="img/avatar.png">
+      </div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="dash.html">Dashboard</a>
+        <a class="mdl-navigation__link" href="profile.html">Profile</a>
+        <a class="mdl-navigation__link" href="mirror.html">Espelho de Ponto</a>
+        <a class="mdl-navigation__link" href="vacation.html">Férias</a>
+        <a class="mdl-navigation__link" href="config.html">Configurações</a>
+      </nav>
+    </div>
+  </header>
+  <!--Menu lateral mobile-->
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-image">
+      <img src="img/avatar.png" class="img-dash">
+  </span>
+  
+    <span class="mdl-layout-title">Roberto Coelho</span>
+    <p>roberto.coelho@gmail.com</p>
+    <span class="line_bottom"></span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="dash.html">
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">reorder</i>
+            Dashboard
+          </a>
+
+      <a class="mdl-navigation__link" href="profile.html">
+        <i class="material-icons">person</i>
+        Profile
+      </a>
+      <a class="mdl-navigation__link" href="mirror.html">
+        <div class="mdl-layout-spacer"></div>
+        <i class="material-icons">apps</i>
+        Espelho de Ponto
+      </a>
+      <a class="mdl-navigation__link link_sidebar" href="vacation.html">
+        <i class="material-icons">beach_access</i>
+        Férias
+      </a>
+      <a class="mdl-navigation__link" href="config.html">
+        <i class="material-icons">settings</i>
+        Configurações
+      </a>
+    </nav>
+  </div>
+  <!--Corpo com os cards-->
+  <main class="mdl-layout__content">
+  <div class="mdl-grid">
+    <!--Card de perfil com informação do profile-->
+      <div class="mdl-cell mdl-cell--6-col box_cards mdl-cell--8-cel-tablet">
+        <div class="mdl-cell mdl-cell--4-col box_photo">
+          <img src="img/perfil.png" class="img_box">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col box_desc">
+          <h4>Profile</h4>
+          <p>Comunicador: <span><i>41.45%</i></span></p>
+          <p>Planejador: <span><i>41.45%</i></span></p>
+      <a href="profile.html"><span class="line_bottom"><h5>Veja Mais</h5></span> </a> 
+        </div>
+      </div>
+      <!--Card com dados do banco de horas-->
+      <div class="mdl-cell mdl-cell--6-col box_cards">
+        <div class="mdl-cell mdl-cell--7-col box_horario">
+          <h4>Banco de Horas</h4>
+          <h6>+ 07:00</h6>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col box_horas">
+          <img src="img/relog.png">
+        </div>
+        <button class="mdl-button mdl-button--raised btn_more">Visualizar espelho de ponto</button>
+      </div>
+      <!--Card com dados das férias-->
+      <div class="mdl-cell mdl-cell--7-col box_ferias">
+          <div class="mdl-cell mdl-cell--7-col">
+            <h3>Férias</h3>
+            <h3 class="text_ferias">Suas férias estão vencendo, entre em contato com o RH</h3>
+          <button class="mdl-button mdl-button--raised btn_rh">Marcar Férias</button>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
