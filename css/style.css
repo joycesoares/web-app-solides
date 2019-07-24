@@ -5,10 +5,28 @@ body,div, h3,h4,h5,h6, p, a{
   font-family: 'Roboto', sans-serif;
 }
 /* Tags de Texto*/
+.text_logo{
+  color: #231D4A;
+  text-transform: uppercase;
+  letter-spacing:.1em;
+  margin-left: 130px;
+}
+a{
+  text-decoration: none;
+}
+label{
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.54);
+}
 p{
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.543846);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.54);
   display: flex;
+  z-index: 9;
+  margin-bottom: 2px;
+  font-weight: bold;
   justify-content: space-between;
 }
 h3{
@@ -32,6 +50,7 @@ h5{
   font-size: 14px;
   text-transform: uppercase;
   color: #231D4A;
+  text-decoration: none;
 }
 h6 {
   font-size: 40px;
@@ -60,11 +79,14 @@ h6 {
   border-radius: 5px;
   margin-bottom: 20px;
 }
+.box_cards  a {
+  margin-left: 0px;
+}
 .box_photo{
   margin: 0 auto;
   padding: 0 auto;
   float: left;
-  width: 90px;
+  width: 80px;
   height: 150px;
   background-color: #FF6E40;
   position: relative;
@@ -72,16 +94,20 @@ h6 {
   display: block
 }
 .img_box{
-  top:20%;
-  left:15%;
+  top:0%;
+  left:-3px;
+  height: 150px;
   position: absolute;
 }
 .box_desc{
-  margin: 5px 4px;
+  margin: 5px 8px;
   padding: 0 auto;
   float: left;
   position: relative;
-  display: block
+  display: block;
+}
+.box_desc > p{
+  color: #ffffff;
 }
 .line_bottom::before{
   content: "";
@@ -92,6 +118,7 @@ h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 /* Segundo card da intro*/
 .btn_more {
   width: 250px;
@@ -130,6 +157,7 @@ h6 {
   color: #ffffff;
   border-radius: 2%;
   margin-left: 30px;
+  font-weight: bolder;
 }
 .text_ferias{
   color: #ffffff;
@@ -138,366 +166,160 @@ h6 {
   line-height: 23px;
   margin-bottom: 10px;
 }
-
-
-.index-banner{
-  display: flex;
-  width: 100%;
-  background: #231D4A;
-  max-width: 100%;
-  max-height: auto;
-  
-} 
-.index-banner img {
-  padding: 80px;
-  width: 65%;
-  height: auto;
+/* --------------------- TELA DE LOGIN----------------------------*/
+.line_header{
+  width: 670px;
+  height: 130px;
+  margin-top: -60px;
+  margin-left: -390px;
+  float: left;
+  background-color: #FF6E40;
+  transform: rotate(168deg);
 }
-
-.index-banner p {
-
-  position: absolute;
-  width: 85px;
-  height: 19px;
-  left: 170px;
-  top: 360px;  
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 19px;
-  /* identical to box height */
-  
-  letter-spacing: 0.4em;
-  
-  color: #FFFFFF;
-}
-
-.login-banner  {
-  display: flex-start;
-  width: 100%;
-  background: white;
-  max-width: 100%;
-  max-height: auto;
+.box_logo{
   margin-top: 40px;
-
+  margin-bottom: 80px;
+  margin-left: 50px
 }
-
-.login-banner img {
-  align-items: top;
-  width: 65%;
-  height: auto;
+.box_login{
+  margin-bottom: 80px;
+  margin-left: 30px;
 }
-
-.login-banner p {
-
-  position: flex-start;
-  width: 85px;
-  height: 19px;
-  left: 170px;
-  top: 360px;  
-  font-family: Roboto;
+.btn_login{
+  width: 250px;
+  height: 50px;
+  background-color: #231D4A;
+  color: #ffffff;
+  border-color: #231D4A;
+  border-radius: 2%;
+  margin-left: 30px;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.text_senha{
+  text-decoration: underline;
   font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 19px;
-  /* identical to box height */
-  
-  letter-spacing: 0.4em;
-  
-  color:#231D4A;
+  font-size: 14px;
+  color: #231D4A;
+  float: right;
+  margin-right: 60px;
+  margin-top: -190px;
 }
-
-.box {
-  position: relative;
-  top: 0;
-  opacity: 1;
+/* --------------------- TELA PROFILER----------------------------*/
+.box_cardPro{
+  width: 330px;
+  height: 220px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.box_dadoPro{
+  margin: 5px 8px;
+  padding: 0 auto;
   float: left;
-  padding: 60px 50px 40px 50px;
-  width: 100%;
-  background: #fff;
-  border-radius: 10px;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  z-index: 5;
-}
-
-.box.back {
-  transform: scale(.95);
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  top: -20px;
-  opacity: .8;
-  z-index: -1;
-}
-
-.box:before {
-  content: "";
-  width: 100%;
-  height: 30px;
-  border-radius: 10px;
-  position: absolute;
-  top: -10px;
-  background: rgba(255, 255, 255, .6);
-  left: 0;
-  transform: scale(.95);
-  -webkit-transform: scale(.95);
-  -ms-transform: scale(.95);
-  z-index: -1;
-}
-
-
-.input,
-.input label,
-.input input,
-.input .spin,
-.button,
-.button button .button.login button i.fa,
-.material-button .shape:before,
-.material-button .shape:after,
-.button.login button {
-  transition: 300ms cubic-bezier(.4, 0, .2, 1);
-  -webkit-transition: 300ms cubic-bezier(.4, 0, .2, 1);
-  -ms-transition: 300ms cubic-bezier(.4, 0, .2, 1);
-}
-
-.material-button,
-.alt-2,
-.material-button .shape,
-.alt-2 .shape,
-.box {
-  transition: 400ms cubic-bezier(.4, 0, .2, 1);
-  -webkit-transition: 400ms cubic-bezier(.4, 0, .2, 1);
-  -ms-transition: 400ms cubic-bezier(.4, 0, .2, 1);
-}
-
-.input,
-.input label,
-.input input,
-.input .spin,
-.button,
-.button button {
-  width: 100%;
-  float: left;
-}
-
-.input,
-.button {
-  margin-top: 30px;
-  height: 70px;
-}
-
-.input,
-.input input,
-.button,
-.button button {
   position: relative;
-}
-
-.input input {
-  height: 60px;
-  top: 10px;
-  border: none;
-  background: transparent;
-}
-
-.input input,
-.input label,
-.button button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 300;
-}
-
-.input:before,
-.input .spin {
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.input:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.1);
-  z-index: 3;
-}
-
-.input .spin {
-  background: #ED2553;
-  z-index: 4;
-  width: 0;
-}
-
-.overbox .input .spin {
-  background: rgba(255, 255, 255, 1);
-}
-
-.overbox .input:before {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.input label {
-  position: absolute;
-  font-size: 15px;
-  top: 10px;
-  left: 0;
-  z-index: 2;
-  cursor: pointer;
-  line-height: 60px;
-}
-
-.button.login {
-  width: 60%;
-  align-items: center;
-  left: 5%;
-}
-
-.button.login button,
-.button button {
-  width: 100%;
-  line-height: 64px;
-  left: 0%;
-  background-color: transparent;
-  border: 3px solid rgba(0, 0, 0, 0.1);
-  font-weight: 900;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.button.login {
-  width: 86%;
-  height: auto;
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-.button {
-  margin-top: 20px;
-}
-
-.button button {
-  background-color: #fff;
-  color: #ED2553;
-  border: none;
-}
-
-.button.login button.active {
-  border: 3px solid transparent;
-  color: #fff !important;
-}
-
-.button.login button.active span {
-  opacity: 0;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-}
-
-
-
-.button.login button:hover {
-  color: #ED2553;
-  border-color: #ED2553;
-}
-
-.button {
-  margin: 40px 0;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.button button {
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-
-.pass-forgot {
-  width: 100%;
-  float: left;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 18px;
-}
-
-.click-efect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #ED2553;
-  border-radius: 50%;
-}
-
-.overbox {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: inherit;
-  border-radius: 10px;
-  padding: 60px 50px 40px 50px;
-}
-
-.overbox .title,
-.overbox .button,
-.overbox .input {
-  z-index: 111;
-  position: relative;
-  color: #fff !important;
-  display: none;
-}
-
-.overbox .title {
-  width: 80%;
-}
-
-.overbox .input {
-  margin-top: 20px;
-}
-
-.overbox .input input,
-.overbox .input label {
-  color: #fff;
-}
-
-.overbox .material-button,
-.overbox .material-button .shape,
-.overbox .alt-2,
-.overbox .alt-2 .shape {
   display: block;
 }
-
-body,
-html {
-  overflow: hidden;
+.tab_dados{
+  width: 10px;
+  margin-right: 100px;
+  padding: 2px;
+  border-radius: 2px;
 }
-
-.materialContainer {
-  width: 100%;
-  max-width: 460px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.tab_dados > th{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+  font-weight: bolder;
 }
-
-*,
-*:after,
-*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-  outline: none;
+.tab_dados td{
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+  padding: 5px;
 }
-
+.tabl_dados2 td{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.541327);
+  padding: 1px;
+}
+.tabl_dados2 > i{
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.541327);
+}
+.line_prof::before{
+  content: "";
+  display: block;
+  max-width: 100%;
+  background: #DBDBDB;
+  border: 1px solid #DBDBDB;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.box_cardPro2{
+  width: 345px;
+  height: 280px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.box_dados2{
+  margin: 5px 8px;
+  padding: 0 auto;
+  float: left;
+  position: relative;
+  display: block;
+}
+/* --------------------- TELA ESPELHO----------------------------*/
+.tabs_menu{
+  max-width: 100%;
+  background-color: #231D4A;
+  padding: 10px;
+}
+.box_cardFerias{
+  width: 345px;
+  height: 90px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.tab_dadosFerias{
+  margin: 5px 8px;
+  padding: 0 auto;
+  float: left;
+  position: relative;
+  display: block;
+}
+.tab_dadosFerias  th{
+  font-size: 10px;
+  line-height:14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.541327);
+  padding: 2px;
+}
+.tab_dadosFerias td{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #737373;
+  margin-left: 30px;
+}
+.btn_dtlh{
+  margin-top: 5px;
+  width: 90px;
+  height: 40px;
+  background-color: #FF6E40;
+  border-color:  #FF6E40;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 3%;
+  font-weight: bolder;
+}

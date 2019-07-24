@@ -21,7 +21,7 @@
       </div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="dash.html">Dashboard</a>
-        <a class="mdl-navigation__link" href="profile.html">Profile</a>
+        <a class="mdl-navigation__link" href="profile.html">Profiler</a>
         <a class="mdl-navigation__link" href="mirror.html">Espelho de Ponto</a>
         <a class="mdl-navigation__link" href="vacation.html">Férias</a>
         <a class="mdl-navigation__link" href="config.html">Configurações</a>
@@ -32,17 +32,16 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-image">
       <img src="img/avatar.png">
-  </span>
+    </span>
     <span class="mdl-layout-title">Roberto Coelho</span>
-    <p>roberto.coelho@gmail.com</p>
+    <p>roberto.coelho@ving.be</p>
     <span class="line_bottom"></span>
     <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="dash.html">
-                    <div class="mdl-layout-spacer"></div>
-                    <i class="material-icons">reorder</i>
-                    Dashboard
-                  </a>
-        
+      <a class="mdl-navigation__link" href="dash.html">
+        <div class="mdl-layout-spacer"></div>
+        <i class="material-icons">reorder</i>
+        Dashboard
+      </a>
       <a class="mdl-navigation__link" href="profile.html">
         <i class="material-icons">person</i>
         Profiler
@@ -64,34 +63,97 @@
   </div>
   <!--Corpo com os cards-->
   <main class="mdl-layout__content">
-  <div class="mdl-grid">
-    <!--Card de perfil com informação do profile-->
-      <div class="mdl-cell mdl-cell--6-col box_cards mdl-cell--8-cel-tablet">
-        <div class="mdl-cell mdl-cell--3-col box_desc">
-          <h4>Roberto Coelho</h4>
-          <p>Executor: <span><i>40.58%</i></span> <span><i>26.21%</i></span>  <span><i>22.47%</i></span></p>
-          <p>Comunicador: <span><i>40.98%</i></span> <span><i>3.6%</i></span>  <span><i>19.84%</i></span></p>
-          <p>Planejador: <span><i>63.93%</i></span> <span><i>12.83%</i></span>  <span><i>28.95%</i></span></p>
-          <p>Analista: <span><i>52.15%</i></span> <span><i>25.78%</i></span>  <span><i>28.74%</i></span></p>
-          
-       </div>
-      </div>
-      <!--Card com dados do banco de horas-->
-      <div class="mdl-cell mdl-cell--6-col box_cards ">
-          <div class="mdl-cell mdl-cell--3-col box_desc li">
-         <p> Data <span><i>21/07/19</i></span></p>
-         <p> Energia <span><i>37.78% (Normal Baixa)</i></span></p>
-         <p> IEM <span><i></i>100.91 (Extremamente Alta)</span></p>
-         <p> IA <span><i>-1.21 (Normal Baixo)</i></span></p>
-         <p> Moral <span><i>3.2 (Normal Alto)</i></span></p>
-         <p> Energia Perfil <span><i>57.2 (Normal Alta)</i></span></p>
-
-
-
-
-
+    <div class="mdl-grid">
+      <!--Card de perfil com informação do profile-->
+      <div class="mdl-cell mdl-cell--6-col box_cardPro mdl-cell--8-cel-tablet">
+        <div class="mdl-cell mdl-cell--3-col box_dadoPro">
+          <table class="mdl-js-data-table tab_dados">
+            <thead>
+              <tr>
+               <h4>Roberto Coelho</h4>
+               <span class="line_prof"></span>
+              </tr>
+              <tr>
+                <th></th>
+                <th>P(+)</th>
+                <th>P(-)</th>
+                <th>Geral</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Executor</td>
+                <td>48.58%</td>
+                <td>26.21%</td>
+                <td>22.47%</td>
+              </tr>
+              <tr>
+                <td>Comunicador</td>
+                <td>40.98%</td>
+                <td>3.6%</td>
+                <td>19.84%</td>
+              </tr>
+              <tr>
+                <td>Planejador</td>
+                <td>63.93%</td>
+                <td>12.83%</td>
+                <td>28.95%</td>
+              </tr>
+              <tr>
+                <td>Analista</td>
+                <td>52.15%</td>
+                <td>25.78%</td>
+                <td>28.74%</td>
+              </tr>
+            </tbody>
+          </table>     
         </div>
-    </div>
-  </main>
-</body>
-</html>
+      </div>
+      <!--Segunda tabela do Profiler-->
+      <div class="mdl-cell mdl-cell--6-col ">
+        <div class="mdl-cell mdl-cell--4-col box_dados2">
+          <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Data</td>
+                <td><i>21/07/2019</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Energia</td>
+                <td><i>36.78% (Normal Baixa)</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">IEM</td>
+                <td><i>100.91 (Extremamente Alto)</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">IA</td>
+                <td><i>-1.21 (Normal Baixo)</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Moral</td>
+                <td><i>3.2 (Normal Alto)</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Energia Perfil</td>
+                <td><i>57.2 (Normal Alta)</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Data</td>
+                <td><i>21/07/2019</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Energia</td>
+                <td><i>36.78% (Normal Baixa)</i></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">IEM</td>
+                <td><i>100.91 (Extremamente Alto)</i></td>
+              </tr>
+            </tbody>
+          </table>      
+        </div>
+      </div>
+    </main>
+  </body>
+  </html>
