@@ -66,36 +66,39 @@
   <!--Corpo com os cards-->
   <main class="mdl-layout__content">
   <div class="mdl-grid">
-    <!--Card de perfil com informação do profile-->
-      <div class="mdl-cell mdl-cell--6-col box_cards mdl-cell--8-cel-tablet">
-        <div class="mdl-cell mdl-cell--4-col box_photo">
-          <img src="img/perfil.png" class="img_box">
-        </div>
-        <div class="mdl-cell mdl-cell--3-col box_desc">
-          <h4>Profile</h4>
-          <p>Comunicador: <span><i>41.45%</i></span></p>
-          <p>Planejador: <span><i>41.45%</i></span></p>
-          <span class="line_bottom"><h5>Veja Mais</h5></span>
-        </div>
-      </div>
-      <!--Card com dados do banco de horas-->
-      <div class="mdl-cell mdl-cell--6-col box_cards">
-        <div class="mdl-cell mdl-cell--7-col box_horario">
-          <h4>Banco de Horas</h4>
-          <h6>+ 07:00</h6>
-        </div>
-        <div class="mdl-cell mdl-cell--2-col box_horas">
-          <img src="img/relog.png">
-        </div>
-        <button class="mdl-button mdl-button--raised btn_more">Visualizar espelho de ponto</button>
-      </div>
-      <!--Card com dados das férias-->
-      <div class="mdl-cell mdl-cell--7-col box_ferias">
-          <div class="mdl-cell mdl-cell--7-col">
-            <h3>Férias</h3>
-            <h3 class="text_ferias">Suas férias estão vencendo, entre em contato com o RH</h3>
-          <button class="mdl-button mdl-button--raised btn_rh">Marcar Férias</button>
-        </div>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--8-cel-tablet">
+        <div class="mdl-cell mdl-cell--4-col ">
+          <table class=" mdl-data-table box_cardFerias tab_Ferias1 ">
+            <thead>
+              <tr>
+                <h4>Informações Gerais</h4>
+                <span class="line_prof"></span>
+               </tr>
+            </thead>
+            <tbody>
+            
+                  <h5>Alterar Senha</h5>
+               
+                  <div class="mdl-cell mdl-cell--4-col box_login">
+                    <form action="#" name="formLogin">
+                       <div class="mdl-textfield mdl-js-textfield">
+                          <input class="mdl-textfield__input" type="text" id="email">
+                          <label class="mdl-textfield__label" for="sample1">SENHA ATUAL:</label>
+                       </div>
+                       <div class="mdl-textfield mdl-js-textfield">
+                          <input class="mdl-textfield__input" type="password" id="senha">
+                          <label class="mdl-textfield__label" for="sample1">NOVA SENHA:</label>
+                       </div>
+                    </form>
+                    <a><button class="btn_alterar" onClick="validarSenha()" id="btnVerificar">SALVAR!</button></a>
+                 </div>
+       
+             
+            </tbody>
+    </table>
+    </div>
+    </div>
     </div>
   </main>
 </body>

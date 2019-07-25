@@ -61,6 +61,46 @@ h6 {
   margin-bottom: 15px;
   font-weight: bolder;
 }
+/*  TELAAAAA INICIAL   */
+
+.index-banner{
+  display: flex;
+  width: 100%;
+  background: #231D4A;
+  max-width: 100%;
+  max-height: auto;
+
+} 
+.index-banner img {
+  padding: 80px;
+  width: 65%;
+  height: auto;
+}
+
+.index-banner p {
+
+  position: absolute;
+  width: 85px;
+  height: 19px;
+  left: 170px;
+  top: 360px;  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 0.4em;
+
+  color: #FFFFFF;
+}
+
+
+
+
+
+
 /* Card inicial da intro*/
 .span_profile{
   font-style:  italic;
@@ -322,4 +362,92 @@ h6 {
   color: #ffffff;
   border-radius: 3%;
   font-weight: bolder;
+}
+
+
+
+
+/* --------------------- TELA FERIAS----------------------------*/
+.tabs_menu1{
+  max-width: 100%;
+  background-color: #231D4A;
+  padding: 10px;
+}
+.box_cardFerias1{
+  width: 350px;
+  height: 150px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.tab_dadosFerias{
+  margin: 5px 8px;
+  padding: 0 auto;
+  float: left;
+  position: relative;
+  display: block;
+}
+.tab_Ferias  th{
+  font-size: 14px;
+  line-height:14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.541327);
+  padding: 2px;
+}
+.tab_Ferias td{
+  padding: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #737373;
+  margin-left: 30px;
+}
+.btn_mf{
+  width: 320px;
+  height: 40px;
+  background-color: #FF6E40;
+  border-color:  #FF6E40;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 3%;
+  font-weight: bolder;
+}
+
+
+.tab_Ferias1  th{
+  font-size: 14px;
+  line-height:14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.541327);
+  padding: 2px;
+}
+.tab_Ferias1 td{
+  padding-bottom: 5%;
+  font-size: 20px;
+  align-items: center;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #737373;
+  margin-left: 30px;
+}
+.material-icons {
+  color: #FF6E40;
+}
+
+/*  TELA DE CONFIGURAÇÃO */ 
+.btn_alterar { 
+  width: 250px;
+  height: 40px;
+  background-color: #FF6E40;
+  border-color:  #FF6E40;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 3%;
+  font-weight: bolder;
+
 }
